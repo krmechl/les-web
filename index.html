@@ -1,116 +1,206 @@
-<!DOCTYPE html>
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="utf-8" />
-<title>Wamer Sketch Page</title>
+<title>BioTest</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="BioTest" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(
+hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
 <style type="text/css">
-html, body {height: 100%;}
-body {margin: 0; padding: 0;}
-.ws-box {
-  position: absolute;
+body {
+	background-color: #CCC;
 }
 </style>
-<link href="https://code.jquery.com/ui/1.11.2/themes/redmond/jquery-ui.min.css" rel="stylesheet">
-<link href="http://wamer.net/~common/lib/jquery.ui.menubar.css" rel="stylesheet">
-<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
-<style type="text/css">
-.carousel-inner, .carousel-inner > .item {
-    height: 100%
-}
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 100%;
-    height: 100%
-}
-.ui-accordion-content, .ui-tabs-panel, .panel-body, .tab-pane {
-    position: relative;
-}
-.ui-menu {
-    min-width: 150px;
-}
-.ws-stretch {
-    width: 100%;  height: 100%;
-}
-
-    
-
-
-
-#ws-box-1 {position: absolute; left:40px; width:270px; top:20px; height:380px;}
-#ws-box-2 {position: absolute; left:0px; width:230px; top:40px; height:280px;}
-#ws-box-9 {position: absolute; left:0px; width:210px; top:0px; height:30px;}
-</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/script.js"></script>
+<!--slider-->
+<script src="js/modernizr.js"></script>
+ <!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<script src="jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="jQueryAssets/jquery-ui-1.9.2.button.custom.min.js" type="text/javascript"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+<!-- FlexSlider -->
+<script defer src="js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+</script>
 </head>
 <body>
-
-    
-
-    <div id="ws-box-1" class="ws-box">
-         
-
-<div id="ws-box-2" class="ws-box">
- 
-    <h3 id="ws-box-3">
-        personal
-    </h3>
-    
-    <div id="ws-box-4">
-         
-<p>personal information</p>
-<p>&nbsp;</p>
-
+<div class="top-bg">
+<div class="wrap">
+<div class="top-hader">
+  <p>
+  
+  <a href="tel:5555555555">
+  <button>Call For Pickup</button> 
+  </a>
+	</div>
+</div>
+<div class="header-bg">
+<div class="header">
+	<div class="logo"><a href="index.html"><img src="images/Bio-Test-Logo.gif" alt="" width="333" height="114" title="BioTest"></a></div>
+</div>
+</div>
+</div>
+<div class="wrap">
+  <div class="menu">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
- 
-    <h3 id="ws-box-5">
-        professional
-    </h3>
-    
-    <div id="ws-box-6">
-         
-<p>professional info</p>
-
+  <div class="search"></div>
+  <div class="sub-head">
+    <ul>
+      <li><a href="#" id="menu">Menu  <span></span></a></li>
+      <li><a href="index.html" id="search">Home <span></span></a></li>
+      </ul>
+    <div class="clear"></div>
     </div>
- 
-    <h3 id="ws-box-7">
-        Item 3
-    </h3>
-    
-    <div id="ws-box-8">
-         
-<p>extra</p>
-
-    </div>
-
+  <script type="text/javascript">
+		$(".menu,.search").hide();
+		$("#menu").click(function(){
+			$(".menu").toggle();
+			$(".search").hide();
+			$("#search").removeClass("active");
+			$("#menu").toggleClass("active");
+		});
+		$("#search").click(function(){
+			$(".search").toggle();
+			$(".menu").hide();
+			$("#menu").removeClass("active");
+			$("#search").toggleClass("active");
+			$(".text").focus();
+		});
+	</script>
+  <div class="clear"></div>
 </div>
 
-
-    <div id="ws-box-9" class="ws-box">
-         
-<p style="text-align: center;"><strong><span style="color: #339966;">PROFILE</span></strong></p>
-
-    </div>
-
-    </div>
-
-
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
-<script src="http://wamer.net/~common/lib/jquery.ui.menubar.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="http://wamer.net/sketch/ws-utils.js"></script>
-<script>
-var _app = {};
-jQuery (function ($) {
-  // Bootstrap no-conflict
-  $.fn.bs_button  = $.fn.button.noConflict();
-  $.fn.bs_tooltip = $.fn.tooltip.noConflict();
-
-$('body').find ('[data-ws-mod-name]').each (function () {
-  var $this = $(this), mn = $this.attr ('data-ws-mod-name');
-  if (_app[mn] && _app[mn].init_instance) _app[mn].init_instance ($this);
+<div class="wrap">
+<div class="flexslider">
+   	<div class="flex-viewport" style="overflow: hidden; position: relative;">
+   		<ul class="slides" style="width: 100%; -webkit-transition: 0.6s; transition: 0.6s; -webkit-transform: translate3d(-5032px, 0, 0);">
+   			<li class="clone" style="width: 100%; float: left; display: block;">
+        		<img src="images/bt-1.jpg" alt=""/>
+    		</li>
+       		<li style="width: 100%; float: left; display: block;" class="">
+    	    	<img src="images/bt-2.gif" alt=""/>
+    		</li>
+    		<li class="" style="width:100%; float: left; display: block;">
+    	    	<img src="images/bt-3.jpg" alt=""/>
+    		</li>
+		</ul>
+	</div>
+</div>
+</div>
+<!--content-->
+<div class="content-bg">
+<div class="wrap">
+<div class="content">
+	<div class="main">
+		<h2 class="">welcome to biotest express</h2>
+		<h3>your source for reliable, quality medical transportation services</h3>
+	</div>
+	<div class="section group top">
+		<div class="grid_1_of_4 images_1_of_4">
+			<div class="grid box">
+				<a href="details.html"><img src="images/results-driven.jpg" alt=""/></a>
+				<h4>Services</h4>
+			</div>	
+			<p><strong>Bio-Test Express</strong> is healthcare’s premier partner for the vital, time-sensitive transportation of blood, blood-related products, and biohazardous materials. It’s our sole focus. And each day, medical professionals throughout the region rely on Bio-Test Express Couriers because of their professionalism, punctuality, and the knowledge and care they exhibit in handling critical materials.
+The healthcare industry is flourishing with new technology, and everyone must keep up. With new efficiencies across the board, there’s a demand to receive one piece of information faster, because treatment won’t begin without it: The Results. And for biomedical laboratories—that depend on courier transportation—the volume of diagnoses is ever-increasing. Any delays or missteps are unacceptable.
+As Pennsylvania’s first—and one of the nation’s first—licensed medical couriers, Bio-Test Express brings decades of experience in the safe and swift transport of blood and specimens. Since 1981, we’ve provided service to numerous laboratories, hospitals, and blood centers—cutting their operational costs significantly, through improved efficiency and expertise. We know the field, we know the territory, we are Results-Driven.</p>
+			<p>&nbsp;</p>
+		</div>
+		<div class="grid_1_of_4 images_1_of_4">
+		 	<div class="grid box">
+				<a href="details.html"><img src="images/biomedical-laboratory.jpg" alt="" /></a>
+				<h4>Safe, Accurate, On-Time Service</h4>
+		 	</div>
+			<p>With each pickup and delivery, <strong>Bio-Test <em>Express</em></strong> couriers solidify the trust that medical technicians have placed in us since 1981. It&rsquo;s a trust built through the understanding that we must continually back up our promise: to be the best, most comprehensive Courier Company serving the healthcare industry. And, to accomplish this, we adhere to time-tested protocols that guarantee success at every stop. What defines our success...? The precise components you request, carefully protected for sterility, received and delivered on or ahead of schedule.<em><strong> Every time…without fail.</strong></em></p>
+			<p>&nbsp;</p>
+		</div>
+		<div class="grid_1_of_4 images_1_of_4">
+			<div class="grid box">
+				<a href="details.html"><img src="images/clock.jpg"  alt=""/></a>
+				<h4>Record Time&#8212;<br>
+			    24/365 Operation</h4>
+			</div>
+			<p>Healthcare also turns to <strong>Bio-Test</strong> for point-to-point punctuality in transporting all types of medical records...blood test results, x-rays, and patient histories...also, pharmaceuticals and home infusion products. If you need it moved, trust <strong>Bio-Test</strong>. We'll respond with our prevailing professionalism, care for safety and confidentiality, and timely turnaround.</p>
+			<p>Our normal hours of operation are 7 am to 5 pm, which fits the standard business day. But, while doctors may keep office hours, emergencies don&rsquo;t. For the dedicated medical professionals that are on-call, on-duty, and ready at a moment&rsquo;s notice, <strong>Bio-Test <em>Express</em></strong> is equally vigilant. For those times outside the norm, a direct dial number reaches our 24/7 service, where specific Dispatchers and Couriers are scheduled to ensure a continual presence that our clients can count on. Whether providing back-up staffing, vehicle support, or management input, we&rsquo;re always ready...unwinking in the wee hours; and prepared to handle the busiest of afternoons.</p>
+			<p>&nbsp;</p>
+		</div>
+		<div class="grid_1_of_4 images_1_of_4">
+			<div class="grid box">
+				<a href="details.html"><img src="images/nextel.jpg" alt=""/></a>
+				<h4>Equipment & Safety</h4>
+			</div>
+		    <ul>
+		      <li><strong>Bio-Test</strong> has a variety of vehicles to meet our customers&rsquo; demands...from PT Cruisers and minivans, to Ford cargo vans and 16-foot straight trucks. All are Company-owned and maintained, and clearly marked with the <strong>Bio-Test</strong> logo.</li>
+		      <li>Every vehicle is equipped with a standard Spill Kit, in the event that a Courier needs to contain a spill or leak of biohazardous material.</li>
+		      <li></li>
+		      <li>At the start of their shift, <strong>Bio-Test</strong> drivers are issued a Nextel two-way communication system with cell phone capabilities.</li>
+		      <li></li>
+		      <li>Depending on the customer&rsquo;s requirements, <strong>Bio-Test</strong> has a system of bar-coding and electronic scanning of delivery items, to provide real-time tracking.</li>
+		      <li></li>
+		      <li>All Couriers carry customized <strong>Bio-Test</strong> specimen transport systems. By using proper combinations of cold packs and dry ice, we&rsquo;re able to ensure that the proper temperature of the specimen is maintained for the duration of the delivery.</li>
+		      <li></li>
+		      <li>When necessary, <strong>Bio-Test</strong> supplies metal Lock Boxes for the client to place outside their office. Our Couriers can then pick up specimens after their offices have closed for the day.</li>
+	      </ul>
+		    <p>&nbsp;</p>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<!--end-content-->
+<div class="footer-bg">
+<div class="wrap">
+<div class="footer">
+<img src="images/Bio-Test-Logo.gif" alt=""/>
+	<div class="section group">Bio-Test <em>Express</em> ~ P.O. Box 5 ~ Allison Park, PA 15101<br>
+	  Office: 724-444-0933 ~ Toll-Free: 1-800-726-3451 ~ Fax: 724-444-0949</div>
+</div>
+</div>
+</div>
+<div class="footer1-bg">
+<div class="wrap"></div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Button1" ).button(); 
 });
-  $('#ws-box-2').accordion();
-}(jQuery));
+$(function() {
+	$( "#Button1" ).button({
+		icons:{primary: "ui-icon-link"}
+	}); 
+});
+$(function() {
+	$( "#Button1" ).button(); 
+});
 </script>
 </body>
 </html>
